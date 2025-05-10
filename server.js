@@ -1,9 +1,14 @@
+
+// cargar las variables de entorno desde mi archivo .env
 require('dotenv').config();
+
+// Importar los modulos
 const express = require('express');
 const path = require('path');
 const solarService = require('./services/solarService');
 const fs = require('fs')
 
+// Inicializar la aplicación de Express
 const app = express();
 const PORT = process.env.PORT || 3000;
 
